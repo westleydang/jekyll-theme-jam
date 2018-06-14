@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<main class="f5 f4-m f4-l lh-copy mw7 center w-100 sans-serif dark-gray pa3">
+  <header class="mv6 measure">
+  {% if page.introduction %}
+    {{ page.introduction | markdownify }}
+  {% endif %}
+  </header>
+</main>

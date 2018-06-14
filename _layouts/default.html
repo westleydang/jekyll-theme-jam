@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang }}">
+{% include head.html %}
+
+<body>
+{% if site.google_tag_manager and jekyll.environment == 'production' %}{% include google-tag-manager-noscript.html %}{% endif %}
+
+{{ content }}
+
+{% include footer.html %}
+</body>
+</html>

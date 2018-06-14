@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<main>
+  <article class="mw7 center w-100 sans-serif dark-gray pa3 mt5">
+    <header>
+      <h1 class="f2 f1-l lh-title">{{ page.title }}</h1>
+      <div class="f5 fw4 gray">
+        {% if page.last_modified_at %}
+        <span>{{ site.data.theme.text.updated }} <time datetime="{{ page.last_modified_at }}">{{ page.last_modified_at | date: site.date_format }}</time></span>
+        {% else %}
+        <time datetime="{{ page.date }}">{{ page.date | date: site.date_format }}</time>
+        {% endif %}
+        <span class="ttl">&middot; {% include read_time.html %}</span>
+      </div>
+    </header>
+
+    <div class="measure f5 f4-ns lh-copy">
+      {{ content }}
+
+      {% if page.comments != false %}
+        {% if site.disqus.shortname %}
+        <div class="mt5">
+          {% include disqus_comments.html %}
+        </div>
+        {% endif %}
+      {% endif %}
+    </div>
+  </article>
+</main>

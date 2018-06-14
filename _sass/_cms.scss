@@ -1,0 +1,80 @@
+// Override Tachyons Defaults
+figure { margin: .25rem 0; } // Removes 40px left/right margins on codeblocks.
+
+.link:focus { outline: 0; } // Removes dotted outline on link click.
+
+// Links
+a {
+  color: $link;
+  transition: color .30s ease-in; 
+  &:hover {
+    color: $link-hover;   
+  }
+}
+
+// Codeblocks
+pre {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow: scroll;
+  padding: .5rem;
+}
+
+pre, code {
+  font-family: $code;
+  font-size: $code-font-size;
+  border-radius: .125rem;
+  background-color: $code-background-color;
+}
+
+p > code {
+  padding: .16rem;
+}
+
+// Blockquotes
+blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 1rem;
+  margin: 4rem 0 4rem 0;
+  color: $blockquote-color;
+  border-left: .25rem solid $blockquote-border-color;
+}
+
+blockquote cite {
+  font-size: .875rem;
+  font-style: normal;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  
+}
+
+// Image captions
+figcaption {
+  font-size: .875rem;
+  font-weight: 400;
+  color: $figcaption-color;
+}
+
+// Footnotes
+.footnotes {
+  font-size: .875rem;
+  color: $footnotes-color;
+}
+
+// Media Queries
+@media #{$breakpoint-medium} {
+  blockquote {
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media #{$breakpoint-large} {
+  blockquote {
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}

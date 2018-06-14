@@ -1,0 +1,37 @@
+################################
+# Navigation Links
+################################
+
+navigation:
+
+  - title: Home
+    url: /
+
+  - title: Writings
+    url: /writings/
+
+  - title: About
+    url: /about/
+
+
+################################
+# UI Default Text
+################################
+    
+text:
+
+    # post.html
+    updated           : Updated
+    minute_read       : min read
+    words_per_minute  : 200
+    undefined_wpm     : Undefined parameter text.words_per_minute in your theme.yml file
+
+    # home.html
+    post_heading      : Latest Writings     # Latest posts heading.
+    post_limit        : 5                   # Show this many latest post on your homepage.
+    archive_heading   : Older Writings      # Archives heading. 
+    archive_title     : View the archives   # Archives link title.
+    archive_url       : /writings/          # Archive link url for home.html and 404 page layouts.
+
+    # footer.html
+    menu_title        : Menu                # Footer menu title on mobile view.

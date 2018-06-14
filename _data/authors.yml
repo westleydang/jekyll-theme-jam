@@ -1,0 +1,9 @@
+# Authors
+
+desired persona:
+  name          : "desired persona"
+  picture       : "/assets/images/author.jpg"
+  url           : "/about/"
+  email         : "hello@desiredpersona.com"
+  bio           : "Affiliate marketer. Media buyer. Open source developer."
+  twitter       : "desiredpersona"

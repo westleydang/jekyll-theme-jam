@@ -1,0 +1,15 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<section>
+{% for post in site.posts %}
+  <a class="link dark-gray" href="{{ post.url | relative_url }}">
+    <article class="pv1">
+      <p class="f5 f4-m f4-l fw4 lh-title mb0 underline">{{ post.title | escape }}</p>
+   </article>
+  </a>
+{% endfor %}
+</section>

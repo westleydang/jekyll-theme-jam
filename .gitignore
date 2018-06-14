@@ -1,0 +1,8 @@
+.DS_Store
+.bundle
+Gemfile.lock
+_site
+.sass-cache
+*.gem
+.vscode
+node_modules

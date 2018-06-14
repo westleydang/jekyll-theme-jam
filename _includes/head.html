@@ -1,0 +1,13 @@
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.meta_robots %}<meta name="robots" content="{{ page.meta_robots }}">{% else %}<meta name="robots" content="all">{% endif %}
+{% if site.disable_title_output == true %}<title>{{ page.title }}</title>{% endif %}
+{% if site.disable_title_output == true %}{% seo title=false %}{% else %}{% seo %}{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/jam.css' | relative_url }}">
+<link rel="icon" type="image/png" href="{{ '/favicon.ico' | relative_url }}">
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% if site.google_analytics and jekyll.environment == 'production' %}{% include google-analytics.html %}{% endif %}
+{% if site.google_tag_manager and jekyll.environment == 'production' %}{% include google-tag-manager.html %}{% endif %}
+</head>
