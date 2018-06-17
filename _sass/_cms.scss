@@ -1,5 +1,7 @@
 // Override Tachyons Defaults
-figure { margin: .25rem 0; } // Removes 40px left/right margins on codeblocks.
+figure { margin: 3rem 0rem; } // Adds margins top/bottom & removes default 40px left/right margins on images.
+
+figure.highlight { margin: .25rem 0;} // Removes 40px left/right margins on codeblocks.
 
 .link:focus { outline: 0; } // Removes dotted outline on link click.
 
@@ -77,4 +79,9 @@ figcaption {
     font-size: 1.5rem;
     padding-left: 1.5rem;
   }
+
+  // Override Tachyons Defaults
+  figure { margin: 4rem 0rem; } // Adds margins top/bottom & removes default 40px left/right margins on images.
+  
+  figure.highlight { margin: .25rem 0;} // Removes 40px left/right margins on codeblocks.
 }
